@@ -1,36 +1,200 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Landing Page - Form</title>
+<html lang="en">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="default.css">
+  <link id="theme-style" rel="stylesheet" href="">
+  <!-- <link id="theme-style" rel="stylesheet" href="green.css">
+  <link id="theme-style" rel="stylesheet" href="purple.css"> -->
+  <title>Aleksandr Zemziulin</title>
+</head>
 
-    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
-    <!-- Your own stylesheet -->
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <!-- container -->
-  <div class="container d-flex">
-   <div class="row">
-    <header class="text-center col-12 align-items-center h-100">
-    <h1 class="text-uppercase"><strong>The biggest startup event of the year!</strong></h1>
-    </header>
-    <div class="buffer col-12"></div>
-    <section class="text-center col-12">
-    <hr>
-    <a href="https://mailchi.mp/7839b35796b7/webdeveloper">
-      <button class="btn btn-primary btn-xl">Find Out More</button>
-    </a>
-    </section>
-   </div>
-  </div><!-- container end -->
+<body>
 
-  </body>
+  <section class="s1">
+    <div class="main-container">
+      <div class="greeting-wrapper">
+        <h1>Hi, I'm Aleksandr Zemziulin</h1>
+      </div>
+
+      <div class="intro-wrapper">
+        <div class="nav-wrapper">
+          <div class="dots-wrapper">
+            <div id="dot-1" class="browser-dot"></div>
+            <div id="dot-2" class="browser-dot"></div>
+            <div id="dot-3" class="browser-dot"></div>
+          </div>
+          <ul id="navigation">
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="left-column">
+          <img id='profile_pic' src="images/myPhoto.JPG" alt="My photo">
+
+          <h5 style="text-align: center;
+          line-height: 0;">Personalize Theme</h5>
+
+          <div id="theme-options-wrapper">
+            <div data-mode="light" id="light-mode" class="theme-dot"></div>
+            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+            <div data-mode="green" id="green-mode" class="theme-dot"></div>
+            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+          </div>
+
+          <p id="settings-note">
+            *Theme settings will be saved for<br>your next visit
+          </p>
+        </div>
+
+        <div class="right-column">
+          <div id="preview-shadow">
+            <div id="preview">
+              <div id="corner-tl" class="corner"></div>
+              <div id="corner-tr" class="corner"></div>
+              <h3>What I Do</h3>
+              <p>I was a lead developer in a past life, now I enjoy teaching courses</p>
+              <div id="corner-br" class="corner"></div>
+              <div id="corner-bl" class="corner"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="s2">
+    <div class="main-container">
+
+      <div class="about-wrapper">
+
+        <div class="about-me">
+          <h4>More about me</h4>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus consequuntur reiciendis quia quasi
+            doloribus
+            rem at temporibus iure rerum deserunt!
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita perspiciatis suscipit sunt assumenda quis
+            quaerat tempora obcaecati neque, dolorem quo fuga qui beatae veniam soluta! Sapiente quos molestias nulla.
+            Distinctio!
+          </p>
+
+          <hr>
+
+          <h4>TOP EXPERTISE</h4>
+
+          <p>
+            Fullstack developer with primary focus on JavaScript + React: <a target="_blank"
+              href="TheCompleteShopifyAliexpressDropshipCourse.pdf">Download Resume</a>
+          </p>
+
+          <div id="skills">
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>ReactJS</li>
+
+            </ul>
+
+            <ul>
+              <li>NodeJS</li>
+              <li>MangoDB</li>
+              <li>Express</li>
+              <li>Postgres</li>
+
+            </ul>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <img id="social_img" src="images/contactUs.jpg" alt="Social media contacts">
+          <h3>Find me on social media</h3>
+          <a href="#" target="_blank" rel="noopener noreferrer">Facebook: Aleksandr Zemziulin</a>
+          <a href="#" target="_blank" rel="noopener noreferrer">Twitter: @twitter link</a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <section class="s1">
+    <div class="main-container">
+      <h3 style="text-align: center;">Some of my past projects</h3>
+
+      <div class="post-wrapper">
+
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="images/random.jpg" alt="Project screenshot">
+            <div class="post-preview">
+              <h6 class="post-title">Post Title</h6>
+              <p class="post-intro">This is a sentence. Some more text Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Quam, rem.</p>
+              <a href="#" target="_blank">See Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="images/random.jpg" alt="Project screenshot">
+            <div class="post-preview">
+              <h6 class="post-title">Post Title</h6>
+              <p class="post-intro">This is a sentence. Some more text Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Dolores, similique?</p>
+              <a href="#" target="_blank">See Live</a>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="post">
+            <img class="thumbnail" src="images/random.jpg" alt="Project screenshot">
+            <div class="post-preview">
+              <h6 class="post-title">Post Title</h6>
+              <p class="post-intro">This is a sentence. Some more text Lorem ipsum dolor sit amet.</p>
+              <a href="#" target="_blank">See Live</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="s2">
+    <div class="main-container">
+      <h3 style="text-align: center;">Get in Touch</h3>
+
+      <form action="POST" id="contact-form">
+
+        <label for="name">Name</label>
+        <input type="text" class="input-field" name="name">
+        <label for="subject">Subject</label>
+        <input type="text" class="input-field" name="subject">
+        <label for="email">Email</label>
+        <input type="email" class="input-field" name="email">
+
+        <label for="message">Message</label>
+        <textarea name="message" class="input-field" cols="30" rows="4"></textarea>
+
+        <input type="submit" id="submit-btn" value="Send">
+      </form>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
