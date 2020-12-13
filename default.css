@@ -2,6 +2,9 @@
   --mainColor: #eaeaea;
   --secondaryColor: #fff;
 
+  --gradientColorLight: rgba(234, 234, 234, 0.8);
+  --gradientColorDark: rgb(255, 255, 255, 0.8);
+
   --borderColor: #c1c1c1;
 
   --mainText: #000;
@@ -40,17 +43,32 @@ body {
 }
 
 .header {
+  position: relative;
   height: 100vh;
   background-image: linear-gradient(
-      to right bottom,
-      rgb(23, 162, 184, 0.8),
-      rgba(16, 211, 241, 0.8)
-    ),
-    url(/images/background.jpg);
-  background-size: cover;
-  background-position: top;
+    to right bottom,
+    var(--gradientColorLight),
+    var(--gradientColorDark)
+  );
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+.bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.15;
+  overflow: hidden;
+}
+
+.bg__video-content {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .greeting-wrapper {
@@ -67,7 +85,8 @@ body {
 .primary-text {
   text-transform: uppercase;
   backface-visibility: hidden;
-  color: var(--secondaryColor);
+  color: var(--mainText);
+  /* color: var(--secondaryColor); */
   margin-bottom: 6rem;
 }
 
@@ -207,6 +226,10 @@ h3 {
   font-size: 2.8rem;
 }
 
+.margin {
+  margin: 1rem 0;
+}
+
 h4 {
   font-size: 2.4rem;
 }
@@ -220,11 +243,12 @@ h6 {
   font-size: 1.6rem;
 }
 
-.s1 {
+/* .s1 {
+  background-image: url(/images/background.jpg);
   background-color: var(--mainColor);
   border-bottom: 0.1rem solid var(--borderColor);
-  overflow: auto;
-}
+  overflow: hidden;
+} */
 
 hr {
   border: 0;
@@ -250,7 +274,9 @@ hr {
 }
 
 .intro-wrapper {
-  background-color: var(--secondaryColor);
+  background-image: url(https://images.unsplash.com/photo-1561494653-744c43aed0c1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1029&q=80);
+  background-size: cover;
+  /* background-color: var(--secondaryColor); */
   border: 0.1rem solid var(--borderColor);
   border-radius: 0.5rem 0.5rem 0 0;
 
@@ -455,7 +481,7 @@ hr {
 
 .skillsList {
   padding: 1rem;
-} 
+}
 
 .social-links {
   display: grid;
@@ -565,11 +591,11 @@ hr {
 }
 
 @media screen and (max-width: 40rem) {
-  .primary-text-main {   
+  .primary-text-main {
     font-size: 3.3rem;
   }
 
-  .primary-text-sub {   
+  .primary-text-sub {
     font-size: 2.3rem;
   }
 }

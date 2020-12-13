@@ -2,6 +2,9 @@
   --mainColor: #15202b;
   --secondaryColor: #192734;
 
+  --gradientColorLight: rgba(21, 32, 43, 0.8);
+  --gradientColorDark: rgb(25, 39, 52, 0.8);
+
   --borderColor: #164d56;
 
   --mainText: #fff;
