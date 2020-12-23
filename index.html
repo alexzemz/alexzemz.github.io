@@ -8,8 +8,8 @@
     type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="default.css">
-  <link id="theme-style" rel="stylesheet" href="blue.css">
+  <link rel="stylesheet" href="css/default.css">
+  <link id="theme-style" rel="stylesheet" href="css/blue.css">
   <!-- <link id="theme-style" rel="stylesheet" href="green.css">
   <link id="theme-style" rel="stylesheet" href="purple.css"> -->
   <title>Portfolio | Aleksandr Zemziulin</title>
@@ -18,24 +18,25 @@
 <body>
 
   <header class="header">
-    <div class="bg__video">
-      <video class="bg__video-content" autoplay muted loop>
-        <source src="/images/bgVideo.mp4" type="video/mp4">
+    <div class="header__video">
+      <video class="header__video--content" autoplay muted loop>
+        <source src="/img/bgVideo.mp4" type="video/mp4">
         Your browser doesn't support this video!
       </video>
     </div>
 
-    <div class="greeting-wrapper">
-      <h1 class="primary-text">
-        <span class="primary-text-main">Are you looking for a full-stack web developer?</span>
+    <div class="header__text--wrapper">
+      <h1 class="heading">
+        <span class="heading__main">Are you looking for a full-stack web developer?</span>
 
-        <span class="primary-text-sub">Hi, I'm Aleksandr Zemziulin</span>
+        <span class="heading__sub">Hi, I'm Aleksandr Zemziulin</span>
       </h1>
     </div>
   </header>
 
-  <div class="main-container">
-    <section class="s1">
+
+  <section class="s1">
+    <div class="main-container">
       <div class="intro-wrapper">
         <div class="nav-wrapper">
           <div class="dots-wrapper">
@@ -48,7 +49,7 @@
           </ul>
         </div>
         <div class="left-column">
-          <img id='profile_pic' src="images/forWebsite.jpg" alt="My photo">
+          <img id='profile_pic' src="img/forWebsite.jpg" alt="My photo">
 
           <h5>Personalize Theme</h5>
 
@@ -78,7 +79,7 @@
           </div>
         </div>
       </div>
-  </div>
+    </div>
   </section>
 
   <section class="s2">
@@ -146,7 +147,8 @@
         </div>
 
         <div class="social-links">
-          <img id="social_img" src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
+          <img id="social_img"
+            src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
             alt="Social media contacts">
           <h3 class="margin">Find me on social media</h3>
           <a href="#" target="_blank" rel="noopener noreferrer">Facebook: @AleksandrZemziulin</a>
@@ -168,7 +170,7 @@
         <div>
           <div class="post">
             <div class="post-preview post__preview--front">
-              <img class="thumbnail" src="images/random.jpg" alt="Project screenshot">
+              <img class="thumbnail" src="img/random.jpg" alt="Project screenshot">
               <h6 class="post-title">Post Title</h6>
               <p class="post-intro">This is a sentence. Some more text Lorem ipsum, dolor sit amet consectetur
                 adipisicing elit. Quam, rem.</p>
@@ -176,7 +178,7 @@
             </div>
 
             <div class="post-preview post__preview--back">
-              <img class="thumbnail" src="images/random.jpg" alt="Project screenshot">
+              <img class="thumbnail" src="img/random.jpg" alt="Project screenshot">
               <h6 class="post-title">Post Title</h6>
               <p class="post-intro">BACK SIDE</p>
               <a href="#" target="_blank">See Live</a>
@@ -186,7 +188,7 @@
 
         <div>
           <div class="post">
-            <img class="thumbnail" src="images/random.jpg" alt="Project screenshot">
+            <img class="thumbnail" src="img/random.jpg" alt="Project screenshot">
             <div class="post-preview">
               <h6 class="post-title">Post Title</h6>
               <p class="post-intro">This is a sentence. Some more text Lorem ipsum dolor sit amet consectetur
@@ -198,7 +200,7 @@
 
         <div>
           <div class="post">
-            <img class="thumbnail" src="images/random.jpg" alt="Project screenshot">
+            <img class="thumbnail" src="img/random.jpg" alt="Project screenshot">
             <div class="post-preview">
               <h6 class="post-title">Post Title</h6>
               <p class="post-intro">This is a sentence. Some more text Lorem ipsum dolor sit amet.</p>
@@ -233,7 +235,7 @@
     </div>
   </section>
 
-  <script src="script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>
