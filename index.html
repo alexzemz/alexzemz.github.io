@@ -16,7 +16,7 @@
 </head>
 
 <body>
-
+  <!-- Header -->
   <header class="header">
     <div class="header__video">
       <video class="header__video--content" autoplay muted loop>
@@ -34,7 +34,7 @@
     </div>
   </header>
 
-
+  <!-- Section one -->
   <section class="section__one">
     <div class="section__container">
       <div class="section__one--wrapper">
@@ -54,10 +54,10 @@
           <h5>Personalize Theme</h5>
 
           <div id="theme-options-wrapper">
-            <div data-mode="light" id="light-mode" class="theme-dot"></div>
-            <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
-            <div data-mode="green" id="green-mode" class="theme-dot"></div>
-            <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+            <div data-mode="light" id="light-mode" class="theme__dot"></div>
+            <div data-mode="blue" id="blue-mode" class="theme__dot"></div>
+            <div data-mode="green" id="green-mode" class="theme__dot"></div>
+            <div data-mode="purple" id="purple-mode" class="theme__dot"></div>
           </div>
 
           <p id="settings-note">
@@ -65,7 +65,7 @@
           </p>
         </div>
 
-        <div class="right-column">
+        <div class="right__column">
           <div id="preview-shadow">
             <div id="preview">
               <div id="corner-tl" class="corner"></div>
@@ -82,12 +82,12 @@
     </div>
   </section>
 
+  <!-- Section two -->
   <section class="section__two">
     <div class="section__container">
+      <div class="about__wrapper">
 
-      <div class="about-wrapper">
-
-        <div class="about-me">
+        <div class="about__wrapper--content">
           <h4>Who I am and why did I create this website?</h4>
 
           <p>
@@ -112,7 +112,7 @@
           </p>
 
           <div id="skills">
-            <ul class="skillsList">
+            <ul class="skills__list">
               <li>HTML5</li>
               <li>CSS3</li>
               <li>Flexbox/Grid</li>
@@ -120,7 +120,7 @@
               <li>Bootstrap 4/5</li>
             </ul>
 
-            <ul class="skillsList">
+            <ul class="skills__list">
               <li>JavaScript</li>
               <li>ReactJS</li>
               <li>Command Line</li>
@@ -128,7 +128,7 @@
               <li>NodeJS</li>
             </ul>
 
-            <ul class="skillsList">
+            <ul class="skills__list">
               <li>Express</li>
               <li>Postman</li>
               <li>MangoDB</li>
@@ -136,7 +136,7 @@
               <li>WordPress</li>
             </ul>
 
-            <ul class="skillsList">
+            <ul class="skills__list">
               <li>Express</li>
               <li>Postman</li>
               <li>MangoDB</li>
@@ -146,41 +146,40 @@
           </div>
         </div>
 
-        <div class="social-links">
-          <img id="social_img"
-            src="https://images.unsplash.com/photo-1562577309-4932fdd64cd1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80"
+        <div class="social__links">
+          <img id="social-img"
+            src="https://cdn.pixabay.com/photo/2014/09/01/00/11/social-media-432498_960_720.png"
             alt="Social media contacts">
-          <h3 class="heading__margin">Find me on social media</h3>
+          <h4 class="heading__margin">Find me on social media</h4>
           <a href="#" target="_blank" rel="noopener noreferrer">Facebook: @AleksandrZemziulin</a>
           <a href="#" target="_blank" rel="noopener noreferrer">YouTube: @twitter link</a>
           <a href="#" target="_blank" rel="noopener noreferrer">GitHub: @github link</a>
         </div>
-
       </div>
-
     </div>
   </section>
 
+  <!-- Section one -->
   <section class="section__one">
     <div class="section__container">
-      <h3 style="text-align: center;" class="heading__margin">Some of my past projects</h3>
+      <h3 class="heading__margin">Some of my past projects</h3>
 
-      <div class="post-wrapper">
+      <div class="posts__wrapper">
 
         <div>
           <div class="post">
-            <div class="post-preview post__preview--front">
+            <div class="post__preview post__preview--front">
               <img class="thumbnail" src="img/random.jpg" alt="Project screenshot">
-              <h6 class="post-title">Post Title</h6>
-              <p class="post-intro">This is a sentence. Some more text Lorem ipsum, dolor sit amet consectetur
+              <h6 class="post__title">Post Title</h6>
+              <p class="post__intro">This is a sentence. Some more text Lorem ipsum, dolor sit amet consectetur
                 adipisicing elit. Quam, rem.</p>
               <a href="#" target="_blank">See Live</a>
             </div>
 
-            <div class="post-preview post__preview--back">
+            <div class="post__preview post__preview--back">
               <img class="thumbnail" src="img/random.jpg" alt="Project screenshot">
-              <h6 class="post-title">Post Title</h6>
-              <p class="post-intro">BACK SIDE</p>
+              <h6 class="post__title">Post Title</h6>
+              <p class="post__intro">BACK SIDE</p>
               <a href="#" target="_blank">See Live</a>
             </div>
           </div>
@@ -188,11 +187,18 @@
 
         <div>
           <div class="post">
-            <img class="thumbnail" src="img/random.jpg" alt="Project screenshot">
-            <div class="post-preview">
-              <h6 class="post-title">Post Title</h6>
-              <p class="post-intro">This is a sentence. Some more text Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Dolores, similique?</p>
+            <div class="post__preview post__preview--front">
+              <img class="thumbnail" src="img/random.jpg" alt="Project screenshot">
+              <h6 class="post__title">Post Title</h6>
+              <p class="post__intro">This is a sentence. Some more text Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Quam, rem.</p>
+              <a href="#" target="_blank">See Live</a>
+            </div>
+
+            <div class="post__preview post__preview--back">
+              <img class="thumbnail" src="img/random.jpg" alt="Project screenshot">
+              <h6 class="post__title">Post Title</h6>
+              <p class="post__intro">BACK SIDE</p>
               <a href="#" target="_blank">See Live</a>
             </div>
           </div>
@@ -200,10 +206,18 @@
 
         <div>
           <div class="post">
-            <img class="thumbnail" src="img/random.jpg" alt="Project screenshot">
-            <div class="post-preview">
-              <h6 class="post-title">Post Title</h6>
-              <p class="post-intro">This is a sentence. Some more text Lorem ipsum dolor sit amet.</p>
+            <div class="post__preview post__preview--front">
+              <img class="thumbnail" src="img/random.jpg" alt="Project screenshot">
+              <h6 class="post__title">Post Title</h6>
+              <p class="post__intro">This is a sentence. Some more text Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Quam, rem.</p>
+              <a href="#" target="_blank">See Live</a>
+            </div>
+
+            <div class="post__preview post__preview--back">
+              <img class="thumbnail" src="img/random.jpg" alt="Project screenshot">
+              <h6 class="post__title">Post Title</h6>
+              <p class="post__intro">BACK SIDE</p>
               <a href="#" target="_blank">See Live</a>
             </div>
           </div>
@@ -215,7 +229,7 @@
 
   <section class="section__two">
     <div class="section__container">
-      <h3 style="text-align: center;" class="heading__margin">Get in Touch</h3>
+      <h3 class="heading__margin">Get in Touch</h3>
 
       <form action="POST" id="contact-form">
 
