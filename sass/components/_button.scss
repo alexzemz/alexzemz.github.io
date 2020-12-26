@@ -1,0 +1,63 @@
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.2rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  color: var(--mainText);
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  -webkit-box-shadow: var(--boxShadow);
+  -moz-box-shadow: var(--boxShadow);
+  box-shadow: var(--boxShadow);
+}
+
+.btn:active {
+  transform: translateY(-0.1rem);
+  -webkit-box-shadow: var(--boxShadow);
+  -moz-box-shadow: var(--boxShadow);
+  box-shadow: var(--boxShadow);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn__white {
+  background-color: var(--mainColor);
+  color: #777;
+
+  &::after {
+    background-color: #fff;
+  }
+}
+
+// Form button
+#submit-btn {
+  margin-top: 1rem;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: #fff;
+  background-color: var(--buttonColor);
+  border: none;
+}

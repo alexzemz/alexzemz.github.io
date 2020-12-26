@@ -18,8 +18,8 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="header__video">
-      <video class="header__video--content" autoplay muted loop>
+    <div class="bg__video">
+      <video class="bg__video--content" autoplay muted loop>
         <source src="/img/bgVideo.mp4" type="video/mp4">
         Your browser doesn't support this video!
       </video>
@@ -162,7 +162,7 @@
   <!-- Section one -->
   <section class="section__one">
     <div class="section__container">
-      <h3 class="heading__margin">Some of my past projects</h3>
+      <h3 class="u__text--center u__text--margin">Some of my past projects</h3>
 
       <div class="posts__wrapper">
 
@@ -229,19 +229,19 @@
 
   <section class="section__two">
     <div class="section__container">
-      <h3 class="heading__margin">Get in Touch</h3>
+      <h3 class="u__text--center u__text--margin">Get in Touch</h3>
 
       <form action="POST" id="contact-form">
 
-        <label for="name">Name</label>
-        <input type="text" class="input-field" name="name">
-        <label for="subject">Subject</label>
-        <input type="text" class="input-field" name="subject">
-        <label for="email">Email</label>
-        <input type="email" class="input-field" name="email">
+        <label class="label" for="name">Name</label>
+        <input type="text" class="input__field" name="name">
+        <label class="label" for="subject">Subject</label>
+        <input type="text" class="input__field" name="subject">
+        <label class="label" for="email">Email</label>
+        <input type="email" class="input__field" name="email">
 
-        <label for="message">Message</label>
-        <textarea name="message" class="input-field" cols="30" rows="4"></textarea>
+        <label class="label" for="message">Message</label>
+        <textarea name="message" class="input__field textarea" cols="30" rows="4"></textarea>
 
         <input type="submit" id="submit-btn" value="Send">
       </form>

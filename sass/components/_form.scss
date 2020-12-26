@@ -1,0 +1,29 @@
+#contact-form {
+  display: block;
+  max-width: 60rem;
+  margin: 0 auto;
+  border: 0.1rem solid var(--borderColor);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background-color: var(--mainColor);
+  margin-bottom: 5rem;
+
+  .label {
+    line-height: 2.7em;
+  }
+
+  .textarea {
+    min-height: 100%;
+    font-size: 1.4rem;
+  }
+
+  .input__field {
+    width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--secondaryColor);
+    border-radius: 0.5rem;
+    border: 0.1rem solid var(--borderColor);
+    font-size: 1.4rem;
+  }
+}
