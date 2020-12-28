@@ -1,4 +1,5 @@
 :root {
+  // Css variables
   --mainColor: #eaeaea;
   --secondaryColor: #fff;
 
@@ -19,3 +20,7 @@
 
   --buttonColor: #000;
 }
+
+// Sass variables
+$main-color: #eaeaea;
+$secondary-color: #fff;
