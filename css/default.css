@@ -134,6 +134,9 @@ strong {
 .u__text--margin {
   margin: 1rem 0 !important; }
 
+.u__margin--top {
+  margin-top: 0.5rem !important; }
+
 .bg__video {
   position: absolute;
   top: 0;
@@ -202,6 +205,12 @@ strong {
   background-color: var(--buttonColor);
   border: none; }
 
+.card__btn {
+  border-radius: 3px;
+  cursor: pointer;
+  color: var(--mainText);
+  background-color: var(--mainColor); }
+
 .posts__wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, 32rem);
@@ -213,13 +222,13 @@ strong {
     -moz-perspective: 150rem;
     perspective: 150rem;
     position: relative;
-    height: 50rem; }
+    height: 52rem; }
     .posts__wrapper .post__preview {
       border: 0.1rem solid var(--borderColor);
       -webkit-box-shadow: var(--boxShadow);
       -moz-box-shadow: var(--boxShadow);
       box-shadow: var(--boxShadow);
-      height: 50rem;
+      height: 52rem;
       width: 100%;
       transition: all 0.8s ease;
       position: absolute;
@@ -309,7 +318,8 @@ strong {
 .section__one {
   background-color: var(--mainColor);
   border-bottom: 0.1rem solid var(--borderColor);
-  overflow: hidden; }
+  overflow: hidden;
+  height: auto; }
 
 .section__one--wrapper {
   background: transparent url("https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80") fixed;
@@ -324,7 +334,8 @@ strong {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 5.2rem 30em;
   grid-template-areas: "nav-wrapper nav-wrapper" "left-column right-column";
-  overflow-x: hidden; }
+  margin: 5rem 0;
+  overflow: hidden; }
 
 .left__column {
   grid-area: left-column;

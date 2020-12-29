@@ -3,12 +3,14 @@
   background-color: var(--mainColor);
   border-bottom: 0.1rem solid var(--borderColor);
   overflow: hidden;
+  height: auto;
 }
 
 // Section one wraper
 .section__one--wrapper {
   background: transparent
-    url("https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80") fixed;
+    url("https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80")
+    fixed;
   background-size: 100%;
   /* background-color: var(--secondaryColor); */
   border: 0.1rem solid var(--borderColor);
@@ -25,7 +27,8 @@
     "nav-wrapper nav-wrapper"
     "left-column right-column";
 
-  overflow-x: hidden;
+  margin: 5rem 0;
+  overflow: hidden;
 }
 
 // Section one left column
@@ -152,7 +155,6 @@
   background-color: var(--secondaryColor);
   border-bottom: 0.1rem solid var(--borderColor);
   overflow: auto;
-
   // About
   .about__wrapper {
     display: grid;

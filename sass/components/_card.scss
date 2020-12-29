@@ -11,14 +11,14 @@
     -moz-perspective: 150rem;
     perspective: 150rem;
     position: relative;
-    height: 50rem;
+    height: 52rem;
 
     &__preview {
       border: 0.1rem solid var(--borderColor);
       -webkit-box-shadow: var(--boxShadow);
       -moz-box-shadow: var(--boxShadow);
       box-shadow: var(--boxShadow);
-      height: 50rem;
+      height: 52rem;
       width: 100%;
       transition: all 0.8s ease;
 
