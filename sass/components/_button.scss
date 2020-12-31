@@ -60,11 +60,25 @@
   color: #fff;
   background-color: var(--buttonColor);
   border: none;
+  cursor: pointer;
 }
 
 .card__btn {
-  border-radius: 3px;
   cursor: pointer;
-  color: var(--mainText);
+  border: 1px solid var(--borderColor);
+  padding: 0.5rem 1rem;
   background-color: var(--mainColor);
+  color: var(--mainText);
+  border-radius: 10px;
+  -webkit-box-shadow: var(--boxShadow);
+  -moz-box-shadow: var(--boxShadow);
+  box-shadow: var(--boxShadow);
+  transform: scaleY(1);
+  display: inline-block;
+  transition: all 0.2s;
+
+  &:hover {
+    transform: scaleY(0.9);
+    box-shadow: none;
+  }
 }

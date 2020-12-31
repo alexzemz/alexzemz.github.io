@@ -203,13 +203,25 @@ strong {
   padding-bottom: 1rem;
   color: #fff;
   background-color: var(--buttonColor);
-  border: none; }
+  border: none;
+  cursor: pointer; }
 
 .card__btn {
-  border-radius: 3px;
   cursor: pointer;
+  border: 1px solid var(--borderColor);
+  padding: 0.5rem 1rem;
+  background-color: var(--mainColor);
   color: var(--mainText);
-  background-color: var(--mainColor); }
+  border-radius: 10px;
+  -webkit-box-shadow: var(--boxShadow);
+  -moz-box-shadow: var(--boxShadow);
+  box-shadow: var(--boxShadow);
+  transform: scaleY(1);
+  display: inline-block;
+  transition: all 0.2s; }
+  .card__btn:hover {
+    transform: scaleY(0.9);
+    box-shadow: none; }
 
 .posts__wrapper {
   display: grid;
