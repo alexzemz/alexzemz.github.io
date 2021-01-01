@@ -155,7 +155,7 @@ strong {
 .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
-  padding: 1.2rem 2rem;
+  padding: 0.5rem 1rem;
   display: inline-block;
   border-radius: 10rem;
   transition: all 0.2s;
@@ -198,15 +198,10 @@ strong {
 
 #submit-btn {
   margin-top: 1rem;
-  width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  color: #fff;
-  background-color: var(--buttonColor);
-  border: none;
-  cursor: pointer; }
+  width: 100%; }
 
-.card__btn {
+.card__btn,
+#submit-btn {
   cursor: pointer;
   border: 1px solid var(--borderColor);
   padding: 0.5rem 1rem;
@@ -219,7 +214,8 @@ strong {
   transform: scaleY(1);
   display: inline-block;
   transition: all 0.2s; }
-  .card__btn:hover {
+  .card__btn:hover,
+  #submit-btn:hover {
     transform: scaleY(0.9);
     box-shadow: none; }
 
@@ -265,7 +261,7 @@ strong {
       height: 23rem;
       background-blend-mode: overlay; }
       .posts__wrapper .post__picture--1 {
-        background-image: linear-gradient(to top, var(--secondaryColor), var(--mainColor)), url(../img/random.jpg);
+        background-image: linear-gradient(to top, var(--secondaryColor), var(--mainColor)), url(../img/natours.png);
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
       .posts__wrapper .post__picture--2 {
@@ -312,7 +308,8 @@ strong {
   padding: 1.5rem;
   border-radius: 0.5rem;
   background-color: var(--mainColor);
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  box-shadow: var(--boxShadow); }
   #contact-form .label {
     line-height: 2.7em; }
   #contact-form .textarea {
@@ -442,7 +439,8 @@ strong {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      background-color: var(--previewShadow); }
+      background-color: var(--previewShadow);
+      box-shadow: var(--boxShadow); }
       .section__two .about__wrapper--content #skills .skills__list {
         padding: 1rem; }
   .section__two .social__links {
