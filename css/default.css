@@ -123,7 +123,9 @@ h3,
 h4,
 h5,
 h6,
-strong {
+strong,
+#submit-btn,
+.card__btn {
   font-family: "Russo One", sans-serif;
   font-weight: 400;
   color: var(--mainText); }
@@ -135,7 +137,7 @@ strong {
   margin: 1rem 0 !important; }
 
 .u__margin--top {
-  margin-top: 0.5rem !important; }
+  margin-top: 1rem !important; }
 
 .bg__video {
   position: absolute;
@@ -197,17 +199,17 @@ strong {
     background-color: #fff; }
 
 #submit-btn {
-  margin-top: 1rem;
+  margin-top: 2rem;
   width: 100%; }
 
 .card__btn,
 #submit-btn {
   cursor: pointer;
   border: 1px solid var(--borderColor);
-  padding: 0.5rem 1rem;
+  padding: 1rem 1.5rem;
   background-color: var(--mainColor);
   color: var(--mainText);
-  border-radius: 10px;
+  border-radius: 0.5rem;
   -webkit-box-shadow: var(--boxShadow);
   -moz-box-shadow: var(--boxShadow);
   box-shadow: var(--boxShadow);
@@ -230,13 +232,13 @@ strong {
     -moz-perspective: 150rem;
     perspective: 150rem;
     position: relative;
-    height: 52rem; }
+    height: 54rem; }
     .posts__wrapper .post__preview {
       border: 0.1rem solid var(--borderColor);
       -webkit-box-shadow: var(--boxShadow);
       -moz-box-shadow: var(--boxShadow);
       box-shadow: var(--boxShadow);
-      height: 52rem;
+      height: 54rem;
       width: 100%;
       transition: all 0.8s ease;
       position: absolute;
@@ -294,7 +296,8 @@ strong {
           font-size: 1.5rem;
           padding: 1rem; }
           .posts__wrapper .post__details ul li:not(:last-child) {
-            border-bottom: 1px solid var(--borderColor); }
+            border-bottom: 1px solid var(--borderColor);
+            padding-bottom: 0; }
   .posts__wrapper .post:hover .post__preview--front {
     transform: rotateY(-180deg); }
   .posts__wrapper .post:hover .post__preview--back {
