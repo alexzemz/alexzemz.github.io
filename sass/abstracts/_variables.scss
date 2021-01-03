@@ -1,0 +1,26 @@
+:root {
+  // Css variables
+  --mainColor: #eaeaea;
+  --secondaryColor: #fff;
+
+  --gradientColorLight: rgba(234, 234, 234, 0.8);
+  --gradientColorDark: rgb(255, 255, 255, 0.8);
+
+  --borderColor: #c1c1c1;
+
+  --mainText: #000;
+  --secondaryText: #4b5156;
+
+  --themeDotBorder: #24292e;
+
+  --previewBg: rgb(251, 249, 243, 0.8);
+
+  --previewShadow: #f0ead6;
+  --boxShadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.75);
+
+  --buttonColor: #000;
+}
+
+// Sass variables
+$main-color: #eaeaea;
+$secondary-color: #fff;

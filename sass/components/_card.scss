@@ -1,0 +1,141 @@
+// Post card functionality
+.posts-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 32rem);
+  gap: 5rem 5rem;
+  justify-content: center;
+  padding-bottom: 5rem;
+
+  .post {
+    -webkit-perspective: 150rem;
+    -moz-perspective: 150rem;
+    perspective: 150rem;
+    position: relative;
+    height: 54rem;
+
+    &-preview {
+      border: 0.1rem solid var(--borderColor);
+      -webkit-box-shadow: var(--boxShadow);
+      -moz-box-shadow: var(--boxShadow);
+      box-shadow: var(--boxShadow);
+      height: 54rem;
+      width: 100%;
+      transition: all 0.8s ease;
+
+      position: absolute;
+      padding: 0.5rem;
+      top: 0;
+      left: 0;
+      backface-visibility: hidden;
+
+      border-radius: 3px;
+      overflow: hidden;
+
+      &__front {
+        background-image: linear-gradient(
+          to top,
+          var(--secondaryColor),
+          var(--mainColor)
+        );
+      }
+
+      &__back {
+        background-image: linear-gradient(
+          to top,
+          var(--secondaryColor),
+          var(--mainColor)
+        );
+        transform: rotateY(180deg);
+      }
+    }
+
+    // Front side styling
+    &-picture {
+      background-size: cover;
+      height: 23rem;
+      background-blend-mode: overlay;
+      // exclusion
+      // hard-light
+      // overlay
+      &__1 {
+        background-image: linear-gradient(
+            to top,
+            var(--secondaryColor),
+            var(--mainColor)
+          ),
+          url(../img/natours.png);
+
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      }
+
+      &__2 {
+        background-image: url(../img/random.jpg);
+      }
+
+      &__3 {
+        background-image: url(../img/random.jpg);
+      }
+    }
+
+    &-heading {
+      font-size: 2.8rem;
+      font-weight: 300;
+      text-transform: uppercase;
+      text-align: right;
+      color: #4b5156;
+      position: absolute;
+      top: 12rem;
+      right: 2rem;
+      width: 75%;
+
+      &__span {
+        padding: 1rem 1.5rem;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+
+        background-image: linear-gradient(
+          to right bottom,
+          rgba($secondary-color, 0.85),
+          rgba($main-color, 0.85)
+        );
+      }
+    }
+
+    &-details {
+      padding: 3rem;
+      text-align: center;
+      color: var(--mainText);
+      font-size: 1.5rem;
+
+      .paragraph-back {
+        font-size: 1.8rem;
+        padding: 0;
+      }
+
+      ul {
+        list-style: none;
+        width: 80%;
+        margin: 0 auto;
+
+        li {
+          padding: 1rem;
+
+          &:not(:last-child) {
+            border-bottom: 1px solid var(--borderColor);
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // Part of card functionality
+  .post:hover .post-preview__front {
+    transform: rotateY(-180deg);
+  }
+
+  .post:hover .post-preview__back {
+    transform: rotateY(0);
+  }
+}

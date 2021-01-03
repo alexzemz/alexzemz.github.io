@@ -6,7 +6,7 @@ if (theme == null) {
   setTheme(theme);
 }
 
-let themeDots = document.getElementsByClassName("theme__dot");
+let themeDots = document.getElementsByClassName("theme-dot");
 
 for (let i = 0; i < themeDots.length; i++) {
   themeDots[i].addEventListener("click", function () {
