@@ -12,6 +12,21 @@
   --boxShadow: 0px 5px 10px -1px rgba(0, 0, 0, 0.75);
   --buttonColor: #000; }
 
+/*
+0px - 600px:      Phone
+600px - 900px:    Tablet portrait
+900px - 1200px:   Tablet landscape
+[1200px - 1800px] is where normal styles apply
+1800px + :        Big desktop
+
+$breakpoint arguement choices:
+- phone 
+- tab-port 
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -50,6 +65,15 @@
 html {
   scroll-behavior: smooth;
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   font-family: "Roboto Mono", monospace;
@@ -527,23 +551,3 @@ strong,
       display: inline-block;
       margin-right: 0.5rem;
       margin-left: 0.5rem; }
-
-/* Media */
-@media screen and (max-width: 120rem) {
-  .section__container {
-    width: 95%; } }
-
-@media screen and (max-width: 80rem) {
-  .header__text--wrapper {
-    grid-template-columns: 1fr;
-    grid-template-areas: "nav-wrapper" "left-column" "right-column"; }
-  .section__one--wrapper {
-    display: block; }
-  .right__column {
-    justify-content: center; } }
-
-@media screen and (max-width: 40rem) {
-  .heading__main {
-    font-size: 3.3rem; }
-  .heading__sub {
-    font-size: 2.3rem; } }

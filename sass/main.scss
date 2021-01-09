@@ -1,5 +1,5 @@
 @import "abstracts/variables";
-// @import "abstracts/mixins";
+@import "abstracts/mixins";
 
 @import "base/animations";
 @import "base/base";
@@ -14,38 +14,3 @@
 @import "layout/grid";
 @import "layout/header";
 @import "layout/navigation";
-
-/* Media */
-@media screen and (max-width: 120rem) {
-  .section__container {
-    width: 95%;
-  }
-}
-
-@media screen and (max-width: 80rem) {
-  .header__text--wrapper {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "nav-wrapper"
-      "left-column"
-      "right-column";
-  }
-
-  .section__one--wrapper {
-    display: block;
-  }
-
-  .right__column {
-    justify-content: center;
-  }
-}
-
-@media screen and (max-width: 40rem) {
-  .heading__main {
-    font-size: 3.3rem;
-  }
-
-  .heading__sub {
-    font-size: 2.3rem;
-  }
-}
