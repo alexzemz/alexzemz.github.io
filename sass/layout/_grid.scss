@@ -29,6 +29,10 @@
     margin: 5rem 0;
     overflow: hidden;
 
+    @include respond(phone) {
+      display: block;
+    }
+
     // Section one left column
     .left-column {
       grid-area: left-column;
@@ -155,12 +159,17 @@
   background-color: var(--secondaryColor);
   border-bottom: 0.1rem solid var(--borderColor);
   overflow: auto;
+
   // About
   .about-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
     padding: 5rem 0 5rem 0;
     gap: 10rem;
+
+    @include respond(phone) {
+      display: block;
+    }
 
     &__content {
       #skills {
@@ -185,6 +194,10 @@
 
     .img-wrapper {
       position: relative;
+
+      @include respond(phone) {
+        margin-top: 5rem;
+      }
 
       .social-img {
         width: 100%;
@@ -228,4 +241,8 @@
 .section-container {
   width: 120rem;
   margin: 0 auto;
+
+  @include respond(tab-port) {
+    width: 95%;
+  }
 }
