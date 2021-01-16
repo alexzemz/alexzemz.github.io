@@ -246,6 +246,18 @@ strong,
   .card-btn__front,
   #submit-btn__front {
     margin-top: 3rem; }
+  @media (max-width: 75em) {
+    .card-btn__back,
+    #submit-btn__back {
+      margin-top: .8em; } }
+  @media (max-width: 56.25em) {
+    .card-btn__back,
+    #submit-btn__back {
+      margin-top: 3em; } }
+  @media (max-width: 37.5em) {
+    .card-btn__back,
+    #submit-btn__back {
+      margin-top: 3.1em; } }
   .card-btn:hover,
   #submit-btn:hover {
     transform: scaleY(0.9);
@@ -263,6 +275,15 @@ strong,
     perspective: 150rem;
     position: relative;
     height: 54rem; }
+    @media (max-width: 75em) {
+      .posts-wrapper .post {
+        height: 34.5em; } }
+    @media (max-width: 56.25em) {
+      .posts-wrapper .post {
+        height: 35.5em; } }
+    @media (max-width: 37.5em) {
+      .posts-wrapper .post {
+        height: 38em; } }
     .posts-wrapper .post-preview {
       border: 0.1rem solid var(--borderColor);
       -webkit-box-shadow: var(--boxShadow);
@@ -278,6 +299,15 @@ strong,
       backface-visibility: hidden;
       border-radius: 3px;
       overflow: hidden; }
+      @media (max-width: 75em) {
+        .posts-wrapper .post-preview {
+          height: 34.5em; } }
+      @media (max-width: 56.25em) {
+        .posts-wrapper .post-preview {
+          height: 35.5em; } }
+      @media (max-width: 37.5em) {
+        .posts-wrapper .post-preview {
+          height: 38em; } }
       .posts-wrapper .post-preview__front {
         background-image: linear-gradient(to top, var(--secondaryColor), var(--mainColor)); }
       .posts-wrapper .post-preview__back {
