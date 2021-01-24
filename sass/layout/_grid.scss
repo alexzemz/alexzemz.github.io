@@ -8,7 +8,7 @@
   // Section one wraper
   &__wrapper {
     background: transparent
-      url("https://images.unsplash.com/photo-1551033406-611cf9a28f67?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80")
+      url("/img/desktopPicture-2x.png")
       fixed;
     background-size: 100%;
     /* background-color: var(--secondaryColor); */
@@ -31,13 +31,16 @@
 
     @include respond(phone) {
       display: block;
+      background: transparent
+      url("/img/desktopPicture-1x.png")
+      fixed;
     }
 
     // Section one left column
     .left-column {
       grid-area: left-column;
       padding: 5rem 0 5rem 0;
-      #profile-pic {
+      .profile-pic img {
         display: block;
         margin: 0 auto;
 
@@ -199,7 +202,7 @@
         margin-top: 5rem;
       }
 
-      .social-img {
+      .social-img img {
         width: 100%;
         transition: all 0.5s;
       }

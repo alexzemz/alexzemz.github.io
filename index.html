@@ -20,7 +20,7 @@
   <header class="header">
     <div class="bg-video">
       <video class="bg-video__content" autoplay muted loop>
-        <source src="https://player.vimeo.com/external/497754241.sd.mp4?s=ff5d6d8d95b8b1a46c3ec5e312480cab6cf65518&profile_id=164" type="video/mp4">
+        <source src="/video/bg-video.mp4" type="video/mp4">
         Your browser doesn't support this video!
       </video>
     </div>
@@ -49,9 +49,13 @@
           </ul>
         </div>
         <div class="left-column">
-          <img id='profile-pic' src="img/forWebsite.jpg" alt="My photo">
 
-          <h5>Personalize Theme</h5>
+          <picture class="profile-pic">
+            <source media="(max-width: 37.5em)" srcset="img/minePicture-1x.png 1x, img/minePicture-2x.png 2x">
+            <img srcset="img/minePicture-1x.png 1x, img/minePicture-2x.png 2x" alt="My photo">
+          </picture>
+
+          <h5 class="left-col-heading">Personalize Theme</h5>
 
           <div id="theme-options-wrapper">
             <div data-mode="light" id="light-mode" class="theme-dot"></div>
@@ -155,7 +159,14 @@
 
         <div class="social-links">
           <figure class="img-wrapper">
-            <img class="social-img" src="img/socialMediaPicture.png" alt="Social media picture">
+
+            <picture class="social-img">
+              <source media="(max-width: 37.5em)"
+                srcset="img/socialMediaPicture-1x.png 1x, img/socialMediaPicture-2x.png 2x">
+              <img srcset="img/socialMediaPicture-1x.png 1x, img/socialMediaPicture-2x.png 2x"
+                alt="Social media picture">
+            </picture>
+
             <figcaption class="caption">
               Image by <a
                 href="https://pixabay.com/users/kropekk_pl-114936/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=432498">kropekk_pl</a>
